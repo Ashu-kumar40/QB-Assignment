@@ -1,0 +1,51 @@
+.CardContainer{
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    margin: 20px;
+    border-radius: 10px;
+}
+.CardContainer:hover{
+    box-shadow: #b3b3b3 0px 0px 10px 5px;
+}
+.CardContainer:hover .movie-name{
+    color: black;
+}
+
+.movie-poster{
+    width: 210px;
+    height: 295px;
+    background: linear-gradient(45deg, #7ee664, #2b39dc);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.movie-name{
+    margin: 10px 0;
+    color: rgb(90, 90, 90);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+a{
+    color: white;
+}
+.view-btn{
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(57, 57, 57);
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    width: fit-content;
+}
+.view-btn:hover{
+    background-color: rgb(0, 0, 0);
+}

@@ -1,0 +1,46 @@
+.movie-details-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 50px; */
+}
+.movie-details{
+    display: flex;
+    padding: 50px;
+}
+.poster>img{
+    width: 400px;
+    margin-right:50px;
+    border-radius: 10px;
+}
+.detail-item{
+    margin: 10px 0;
+}
+.details-heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.detail-Title{
+    background-color: rgb(211, 211, 211);
+    margin: 0 5px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.book-btn{
+    background-color: rgb(42, 42, 42);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.book-btn:hover{
+    background-color: rgb(208, 208, 208);
+    cursor: pointer;
+    box-shadow: #b3b3b3 0px 0px 10px 5px;
+    color: black;
+}
