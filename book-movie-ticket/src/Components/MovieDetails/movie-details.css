@@ -39,8 +39,11 @@
     font-size: 1.2rem;
 }
 .book-btn:hover{
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(117, 117, 117);
     cursor: pointer;
     box-shadow: #b3b3b3 0px 0px 10px 5px;
+    color: black;
+}
+.book-btn>Link:hover{
     color: black;
 }

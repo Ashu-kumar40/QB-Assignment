@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./movie-details.css";
 
 export default function MovieDetails() {
@@ -44,7 +44,7 @@ export default function MovieDetails() {
           <div className="rating detail-item">
             <span className="details-heading">Rating :</span><span className="detail-Title">{movie[0]?.show.rating.average}</span> 
           </div>
-          <button className="book-btn">Book Ticket</button>
+          <button className="book-btn"><Link>Book Ticket</Link></button>
         </div>
       </div>
     </div>
