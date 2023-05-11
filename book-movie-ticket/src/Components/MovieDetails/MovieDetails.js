@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./movie-details.css";
 
 export default function MovieDetails() {
@@ -20,6 +20,16 @@ export default function MovieDetails() {
     getData();
   }, []);
 
+  const navigate = useNavigate();
+  const PassDate = () => {
+    navigate(`/movie-details/${movie[0]?.show.id}/book-ticket`, {
+      state: { 
+        movieName: movie[0]?.show.name,
+        movieId: movie[0]?.show.id
+       },
+    });
+  };
+
   return (
     <div className="movie-details-container">
       {console.log(movie)}
@@ -33,18 +43,30 @@ export default function MovieDetails() {
           <div className="movie-summary">
             {movie[0]?.show.summary.replace(/(<([^>]+)>)/gi, "")}
           </div>
-          <div className="movie-genre detail-item" >
-            <span className="details-heading">Genre :</span> {movie[0]?.show.genres.map((genre) => (
-            <span className="detail-Title">{genre+" "}</span>
+          <div className="movie-genre detail-item">
+            <span className="details-heading">Genre :</span>{" "}
+            {movie[0]?.show.genres.map((genre) => (
+              <span className="detail-Title">{genre + " "}</span>
             ))}
           </div>
           <div className="releade-date detail-item">
-            <span className="details-heading">Release Date :</span><span className="detail-Title">{movie[0]?.show.premiered}</span> 
+            <span className="details-heading">Release Date :</span>
+            <span className="detail-Title">{movie[0]?.show.premiered}</span>
           </div>
           <div className="rating detail-item">
-            <span className="details-heading">Rating :</span><span className="detail-Title">{movie[0]?.show.rating.average}</span> 
+            <span className="details-heading">Rating :</span>
+            <span className="detail-Title">
+              {movie[0]?.show.rating.average}
+            </span>
           </div>
-          <button className="book-btn"><Link>Book Ticket</Link></button>
+          <button
+            className="book-btn"
+            onClick={() => {
+              PassDate();
+            }}
+          >
+            Book Ticket
+          </button>
         </div>
       </div>
     </div>

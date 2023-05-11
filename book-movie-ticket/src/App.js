@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import MovieDetails from './Components/MovieDetails/MovieDetails';
+import Form from './Components/TicketForm/Form';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='movie-details/:id' element={<MovieDetails />} />
+          <Route path='movie-details/:id/book-ticket' element={<Form />} />
         </Routes>
       </Router>
       <Footer />
