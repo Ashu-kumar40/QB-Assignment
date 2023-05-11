@@ -51,3 +51,23 @@
 .book-btn:hover{
     background-color: gray;
 }
+@media screen and (max-width: 550px) {
+    .details-heading{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .poster>img{
+        display: block;
+        width: 200px;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .movie-details{
+        padding: 10px;
+    }
+    .detail-Title{
+        margin: 5px 5px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}

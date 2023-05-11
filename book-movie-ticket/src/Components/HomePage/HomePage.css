@@ -11,3 +11,13 @@
         height: 300px !important;
     }
 }
+@media screen and (max-width: 550px) {
+    .slick-slide>div{
+        height: 150px !important;
+    }
+    .heading{
+        font-size: 20px;
+        display: block;
+        margin: 10px auto;
+    }
+}

@@ -6,3 +6,11 @@
     background-color: #282c34;
     color: white;
 }
+@media screen and (max-width: 550px) {
+    .logo>h1{
+        font-size: 15px;
+    }
+    .items{
+        font-size: 10px;
+    }
+}
