@@ -6,3 +6,8 @@
     height: 600px !important;
     margin: 10px;
 }
+@media screen and (max-width: 850px) {
+    .slick-slide>div{
+        height: 300px !important;
+    }
+}

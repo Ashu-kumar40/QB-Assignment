@@ -7,7 +7,7 @@
     align-items: center;
 }
 form{
-    width: 30%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
